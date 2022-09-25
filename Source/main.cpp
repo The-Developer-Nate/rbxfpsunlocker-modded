@@ -476,8 +476,9 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 			if (!Settings::QuickStart)
 			{
-				printf("Minimizing to system tray in 2 seconds...\n");
-				Sleep(2000);
+				printf("Loading mods...\n");
+				printf("Minimizing to system tray in 0.5 seconds...\n");
+				Sleep(500);
 				UI::ToggleConsole();
 			}
 
