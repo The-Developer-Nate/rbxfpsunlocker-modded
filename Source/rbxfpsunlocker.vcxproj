@@ -151,6 +151,40 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\eee\lapi.c" />
+    <ClCompile Include="..\..\..\eee\lauxlib.c" />
+    <ClCompile Include="..\..\..\eee\lbaselib.c" />
+    <ClCompile Include="..\..\..\eee\lcode.c" />
+    <ClCompile Include="..\..\..\eee\lcorolib.c" />
+    <ClCompile Include="..\..\..\eee\lctype.c" />
+    <ClCompile Include="..\..\..\eee\ldblib.c" />
+    <ClCompile Include="..\..\..\eee\ldebug.c" />
+    <ClCompile Include="..\..\..\eee\ldo.c" />
+    <ClCompile Include="..\..\..\eee\ldump.c" />
+    <ClCompile Include="..\..\..\eee\lfunc.c" />
+    <ClCompile Include="..\..\..\eee\lgc.c" />
+    <ClCompile Include="..\..\..\eee\linit.c" />
+    <ClCompile Include="..\..\..\eee\liolib.c" />
+    <ClCompile Include="..\..\..\eee\llex.c" />
+    <ClCompile Include="..\..\..\eee\lmathlib.c" />
+    <ClCompile Include="..\..\..\eee\lmem.c" />
+    <ClCompile Include="..\..\..\eee\loadlib.c" />
+    <ClCompile Include="..\..\..\eee\lobject.c" />
+    <ClCompile Include="..\..\..\eee\lopcodes.c" />
+    <ClCompile Include="..\..\..\eee\loslib.c" />
+    <ClCompile Include="..\..\..\eee\lparser.c" />
+    <ClCompile Include="..\..\..\eee\lstate.c" />
+    <ClCompile Include="..\..\..\eee\lstring.c" />
+    <ClCompile Include="..\..\..\eee\lstrlib.c" />
+    <ClCompile Include="..\..\..\eee\ltable.c" />
+    <ClCompile Include="..\..\..\eee\ltablib.c" />
+    <ClCompile Include="..\..\..\eee\ltm.c" />
+    <ClCompile Include="..\..\..\eee\lua.c" />
+    <ClCompile Include="..\..\..\eee\luac.c" />
+    <ClCompile Include="..\..\..\eee\lundump.c" />
+    <ClCompile Include="..\..\..\eee\lutf8lib.c" />
+    <ClCompile Include="..\..\..\eee\lvm.c" />
+    <ClCompile Include="..\..\..\eee\lzio.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="procutil.cpp" />
     <ClCompile Include="settings.cpp" />
@@ -159,6 +193,34 @@
     <ClCompile Include="version.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\eee\lapi.h" />
+    <ClInclude Include="..\..\..\eee\lauxlib.h" />
+    <ClInclude Include="..\..\..\eee\lcode.h" />
+    <ClInclude Include="..\..\..\eee\lctype.h" />
+    <ClInclude Include="..\..\..\eee\ldebug.h" />
+    <ClInclude Include="..\..\..\eee\ldo.h" />
+    <ClInclude Include="..\..\..\eee\lfunc.h" />
+    <ClInclude Include="..\..\..\eee\lgc.h" />
+    <ClInclude Include="..\..\..\eee\ljumptab.h" />
+    <ClInclude Include="..\..\..\eee\llex.h" />
+    <ClInclude Include="..\..\..\eee\llimits.h" />
+    <ClInclude Include="..\..\..\eee\lmem.h" />
+    <ClInclude Include="..\..\..\eee\lobject.h" />
+    <ClInclude Include="..\..\..\eee\lopcodes.h" />
+    <ClInclude Include="..\..\..\eee\lopnames.h" />
+    <ClInclude Include="..\..\..\eee\lparser.h" />
+    <ClInclude Include="..\..\..\eee\lprefix.h" />
+    <ClInclude Include="..\..\..\eee\lstate.h" />
+    <ClInclude Include="..\..\..\eee\lstring.h" />
+    <ClInclude Include="..\..\..\eee\ltable.h" />
+    <ClInclude Include="..\..\..\eee\ltm.h" />
+    <ClInclude Include="..\..\..\eee\lua.h" />
+    <ClInclude Include="..\..\..\eee\lua.hpp" />
+    <ClInclude Include="..\..\..\eee\luaconf.h" />
+    <ClInclude Include="..\..\..\eee\lualib.h" />
+    <ClInclude Include="..\..\..\eee\lundump.h" />
+    <ClInclude Include="..\..\..\eee\lvm.h" />
+    <ClInclude Include="..\..\..\eee\lzio.h" />
     <ClInclude Include="procutil.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="settings.h" />
