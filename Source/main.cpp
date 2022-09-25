@@ -5,6 +5,10 @@
 #include <unordered_map>
 #include <chrono>
 #include <TlHelp32.h>
+#include <fstream>
+#include <iostream>
+#include <filesystem>
+namespace fs = std::filesystem;
 
 #pragma comment(lib, "Shlwapi.lib")
 #include <Shlwapi.h>
@@ -14,7 +18,11 @@
 #include "rfu.h"
 #include "procutil.h"
 #include "sigscan.h"
-#include ""
+#include "lua.h"
+#include "lualib.h"
+#include "lauxlib.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 HANDLE SingletonMutex;
 
@@ -413,6 +421,8 @@ bool CheckRunning()
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+	lua_State *L = luaL_newstate();
+	luaL_openlibs(L);
 	if (!Settings::Init())
 	{
 		char buffer[64];
@@ -478,6 +488,12 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 			if (!Settings::QuickStart)
 			{
 				printf("Loading mods...\n");
+				std::string ext(".lua");
+				for (auto& p : fs::recursive_directory_iterator("."))
+				{
+					if (p.path().extension() == ext)
+						luaL_dofile(L, p.path().string().c_str());
+				}
 				printf("Minimizing to system tray in 0.5 seconds...\n");
 				Sleep(500);
 				UI::ToggleConsole();
