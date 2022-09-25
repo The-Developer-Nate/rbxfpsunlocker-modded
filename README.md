@@ -2,7 +2,7 @@
 1. Download the latest release from [Releases](https://github.com/The-Developer-Nate/rbxfpsunlocker-modded/releases)
 2. Extract `rbxfpsunlocker-modded.zip` into a folder
 3. Run `rbxfpsunlocker.exe` before or after starting Roblox
-4. Enjoy those [beautiful frames]((https://i.imgur.com/Qd02cjy.png) 👌
+4. Enjoy those [beautiful frames](https://i.imgur.com/Qd02cjy.png) 👌
 
 ## Submitting an Issue
 
